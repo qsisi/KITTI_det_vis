@@ -2,7 +2,6 @@
 
 Date: 2022.06.09
 
-Ref:https://blog.csdn.net/cg129054036/article/details/119516704
 '''
 import numpy as np
 import os
@@ -285,7 +284,7 @@ if __name__ == '__main__':
     img3 = get_image_with_projected_lidar(img, calib, velodyne)
     imgs = np.vstack([img1, img2, img3])
     Image.fromarray(imgs).show()
-    
+
     show_bboxes_in_lidar(velodyne, calib, objects)
 
 
