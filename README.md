@@ -2,6 +2,16 @@
 
 This repo contains visualizing code for KITTI 3D object detection, including showing 2D bounding box, 3D bounding box and lidar projection in left color camera coordinate system, 3D bounding box in lidar coordinate system.
 
+### Requirements
+
+```shell
+open3d
+opencv-python
+matplitlib
+pillow
+numpy
+```
+
 ### Usage
 
 ```
