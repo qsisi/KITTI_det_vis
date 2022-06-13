@@ -10,11 +10,9 @@ python vis_kitti.py
 
 ### Visualization
 
-![1](D:\ppfnet\KITTI_det_vis\misc\1.png)
+![](misc/1.png)
 
-![2](D:\ppfnet\KITTI_det_vis\misc\2.png)
-
-
+![](misc/2.png)
 
 ### TO DO:
 
