@@ -248,8 +248,8 @@ def show_bboxes_in_lidar(velodyne, calib, objects):
         bbox_3d = create_bbox_3d_in_rect_cam0(obj)
         bbox_3d_in_lidar = KITTI_Object.rect_cam0_to_velodyne(bbox_3d, calib.Tr_velo_to_cam, calib.R0_rect)
         bboxes.append(create_o3d_bbox(bbox_3d_in_lidar))
-    pcd = o3d.open3d.geometry.PointCloud()
-    pcd.points = o3d.open3d.utility.Vector3dVector(velodyne)
+    pcd = o3d.geometry.PointCloud()
+    pcd.points = o3d.utility.Vector3dVector(velodyne)
     pcd.paint_uniform_color([1, 1, 1])
 
     show_geometries([pcd] + bboxes)
